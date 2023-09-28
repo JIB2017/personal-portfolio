@@ -183,6 +183,85 @@
   left: 50%;
 }
 
+.bg-jib {
+  --tw-bg-opacity: 1;
+  background-color: rgb(10 10 41 / var(--tw-bg-opacity));
+}
+
+.text-btn {
+  color: rgb(10 10 41/1);
+}
+
+.text-btn2 {
+  color: rgb(255,255,255);
+}
+
+.text-gradient-grey {
+  background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-landing-rainbow {
+  background-image: conic-gradient(
+    from 180deg at 50% 50%,
+    #3fdcf7 0deg,
+    #1890ff 51.43deg,
+    #6813cb 102.86deg,
+    #ff003d 154.29deg,
+    #ff8a00 205.71deg,
+    #ffd600 257.14deg,
+    #67be23 308.57deg,
+    #3fdcf7 1turn
+  );
+}
+
+.animate-spin-slow {
+  animation: 3s linear infinite f;
+}
+
+.animation-slower-speed {
+  animation-duration: 5s;
+}
+
+.animation-paused {
+  animation-play-state: paused;
+}
+
+.animation-running {
+  animation-play-state: running;
+}
+
+@keyframes f {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.bg-landing-ghost {
+  background-image: conic-gradient(
+    from 90deg at 50% 50%,
+    #ffffff40 0,
+    #ffffff40 10%,
+    #fff 20%,
+    #ffffff40 30%,
+    #ffffff40 60%,
+    #fff 70%,
+    #ffffff40 80%,
+    #ffffff40 100%
+  );
+}
+
+.bg-white-0 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-grey-0 {
+  --tw-bg-opacity: 1;
+  background-color: #dfdfdf;
+}
+
 @media screen and (max-width: 500px) {
   .sm-box-5,
   .sm-box-6,
