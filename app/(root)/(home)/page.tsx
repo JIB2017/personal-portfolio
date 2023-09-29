@@ -1,5 +1,7 @@
 import { Btn1, Btn2 } from "@/components/button";
 import { BackgroundAnimation } from "@/components/BackgroundAnimation"
+import TypingAnimation from '@/components/TypingAnimation';
+import Filters from "@/components/Filters";
 
 const Page = () => {
   return (
@@ -9,9 +11,10 @@ const Page = () => {
           <h1 className="heading2 text-gradient_purple-blue py-4">
             Juan Ignacio Blacutt
           </h1>
-          <span className="heading2 text-gradient-grey mt-2">
+          <TypingAnimation />
+          {/* <span className="heading2 text-gradient-grey mt-2">
             Fullstack Developer
-          </span>
+          </span> */}
           <div className="flex-between flex-row gap-12 mt-12">
             <Btn1 />
             <Btn2 />
@@ -19,8 +22,12 @@ const Page = () => {
         </div>
         <div className="flex-center w-full z-20">
           <BackgroundAnimation />
+          {/* <Image src="/BackgroundAnimation.svg" alt="background-animation" width={150} height={150} className="w-full"/> */}
         </div>
       </section>
+
+      <Filters />
+      <section className="text-white">Proyectos</section>
     </main>
   );
 };

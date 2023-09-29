@@ -1,7 +1,5 @@
 export const BackgroundAnimation = () => (
-  <div className="w-full">
     <svg
-      className="BgAnimation__svg"
       viewBox="0 0 602 602"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -357,6 +355,5 @@ export const BackgroundAnimation = () => (
         </linearGradient>
       </defs>
     </svg>
-  </div>
 );
 
