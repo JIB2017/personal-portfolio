@@ -24,7 +24,7 @@ export const Btn1 = () => {
               fill="currentColor"
               fillRule="evenodd"
               d="M6.138 4.335a2.654 2.654 0 0 1 2.638.033l9.143 5.4A2.594 2.594 0 0 1 19.199 12c0 .92-.49 1.765-1.28 2.232l-9.143 5.4c-.81.479-1.817.491-2.638.033A2.595 2.595 0 0 1 4.8 17.4V6.6c0-.943.515-1.807 1.338-2.265Zm1.824 1.41a1.054 1.054 0 0 0-1.045-.013.995.995 0 0 0-.517.868v10.8c0 .354.193.687.517.868.325.18.725.176 1.045-.013l9.143-5.4A.995.995 0 0 0 17.6 12a.995.995 0 0 0-.495-.855l-9.143-5.4Z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             ></path>
           </svg>
           <span className="body-semibold">Ver proyectos!</span>
@@ -47,7 +47,7 @@ export const Btn2 = () => {
       </div>
       {/* Contenido */}
       <div className="bg-jib rounded-lg px-10 py-4 ">
-        <div className="gap-2 flex items-center justify-center group-hover:scale-105 duration-100 ease-in-out transition-transform">
+        <div className="gap-2 flex-center group-hover:scale-105 duration-100 ease-in-out transition-transform">
           <svg
             className="text-btn2"
             xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,7 @@ export const Btn2 = () => {
               fill="currentColor"
               fillRule="evenodd"
               d="M5.6 6.4A2.4 2.4 0 0 1 8 4h4.937a2.4 2.4 0 0 1 1.697.703l3.063 3.063a2.4 2.4 0 0 1 .703 1.697V17.6A2.4 2.4 0 0 1 16 20H8a2.4 2.4 0 0 1-2.4-2.4V6.4ZM8 5.6a.8.8 0 0 0-.8.8v11.2a.8.8 0 0 0 .8.8h8a.8.8 0 0 0 .8-.8V9.463a.8.8 0 0 0-.234-.566l-3.063-3.063a.8.8 0 0 0-.566-.234H8Z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             ></path>
           </svg>
           <span className="body-semibold text-btn2">Ver cv ahoraaa!</span>

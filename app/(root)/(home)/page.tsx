@@ -2,8 +2,23 @@ import { Btn1, Btn2 } from "@/components/button";
 import { BackgroundAnimation } from "@/components/BackgroundAnimation"
 import TypingAnimation from '@/components/TypingAnimation';
 import Filters from "@/components/Filters";
+import { getProjects } from "@/sanity/actions";
+import ProjectCard from "@/components/ProjectCard";
 
-const Page = () => {
+export const revalidate = 900;
+
+interface Props {
+  searchParams: { [key: string]: string | undefined };
+};
+
+const Page = async ({ searchParams }: Props) => {
+  const projects = await getProjects({
+    category: searchParams?.category || "",
+    page: "1",
+  });
+
+  console.log(projects);
+
   return (
     <main className="flex-center flex-col paddings w-full mx-auto">
       <section className="flex-center flex-row nav-padding w-full">
@@ -27,7 +42,11 @@ const Page = () => {
       </section>
 
       <Filters />
-      <section className="text-white">Proyectos</section>
+      <section className="flex-center flex-row text-white w-full flex-wrap gap-8">
+          {projects && projects?.map((card: any) => (
+            <ProjectCard key={card._id} title={card.title} image={card.image} description={card.description} repository={card.repository} livesite={card.livesite}/>
+            ))}
+      </section>
     </main>
   );
 };
