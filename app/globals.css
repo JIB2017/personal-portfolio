@@ -293,8 +293,8 @@
   background-clip: text;
 }
 
-.gradient_purple {
-  background: linear-gradient(90deg, #854cff 0%, #b573f8 100%);
+.gradient_purple-blue {
+  background: linear-gradient(90deg, #4c73ff 0%, #73e0f8 100%);
 }
 
 .text-gradient_blue-purple {

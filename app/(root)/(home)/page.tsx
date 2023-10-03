@@ -42,15 +42,17 @@ const Page = async ({ searchParams }: Props) => {
         </div>
       </section>
 
+      <h2 className="heading2 text-gradient-grey p-4 mt-4">Proyectos</h2>
       <Filters />
       {/* Proyectos */}
-      <section className="flex-center flex-row text-white w-full flex-wrap gap-8 mt-8">
+      <section className="flex-center flex-row text-white w-full flex-wrap gap-8 mt-8 mb-8">
           {projects && projects?.map((card: any) => (
             <ProjectCard key={card._id} title={card.title} image={card.image} description={card.description} repository={card.repository} livesite={card.livesite}/>
             ))}
       </section>
 
       {/* Skills */}
+      <h2 className="heading2 text-gradient-grey p-4 mt-12">Skills</h2>
       <Skills />
     </main>
   );

@@ -39,7 +39,7 @@ const Filters = () => {
             key={filter}
             onClick={() => handlerFilter(filter)}
             className={`${
-              active === filter ? "bg-landing-rainbow" : ""
+              active === filter ? "gradient_purple-blue" : ""
             } whitespace-nowrap rounded-lg px-8 py-2.5 capitalize`}
           >
             {filter}
