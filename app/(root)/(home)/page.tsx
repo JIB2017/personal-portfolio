@@ -4,6 +4,7 @@ import TypingAnimation from '@/components/TypingAnimation';
 import Filters from "@/components/Filters";
 import { getProjects } from "@/sanity/actions";
 import ProjectCard from "@/components/ProjectCard";
+import Skills from "@/components/Skills";
 
 export const revalidate = 900;
 
@@ -42,11 +43,15 @@ const Page = async ({ searchParams }: Props) => {
       </section>
 
       <Filters />
-      <section className="flex-center flex-row text-white w-full flex-wrap gap-8">
+      {/* Proyectos */}
+      <section className="flex-center flex-row text-white w-full flex-wrap gap-8 mt-8">
           {projects && projects?.map((card: any) => (
             <ProjectCard key={card._id} title={card.title} image={card.image} description={card.description} repository={card.repository} livesite={card.livesite}/>
             ))}
       </section>
+
+      {/* Skills */}
+      <Skills />
     </main>
   );
 };
