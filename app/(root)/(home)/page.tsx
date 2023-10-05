@@ -5,6 +5,7 @@ import Filters from "@/components/Filters";
 import { getProjects } from "@/sanity/actions";
 import ProjectCard from "@/components/ProjectCard";
 import Skills from "@/components/Skills";
+import MouseTrack from "../../MouseTrack";
 
 export const revalidate = 900;
 
@@ -18,10 +19,12 @@ const Page = async ({ searchParams }: Props) => {
     page: "1",
   });
 
-  console.log(projects);
+  //console.log(projects);
 
   return (
     <main className="flex-center flex-col paddings w-full mx-auto">
+      <div></div>
+      <MouseTrack />
       <section className="flex-center flex-row nav-padding w-full">
         <div className="flex-start flex-col w-full h-auto">
           <h1 className="heading2 text-gradient_purple-blue py-4">
@@ -54,6 +57,9 @@ const Page = async ({ searchParams }: Props) => {
       {/* Skills */}
       <h2 className="heading2 text-gradient-grey p-4 mt-12">Skills</h2>
       <Skills />
+      <div id="blob">
+        <div></div>
+      </div>
     </main>
   );
 };
