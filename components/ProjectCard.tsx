@@ -7,10 +7,12 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
+import Link from "next/link";
+import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 
 interface Props {
     title: string,
-    image: string | null,
+    image: string,
     description: string,
     repository: string,
     livesite: string,
@@ -19,9 +21,17 @@ interface Props {
 const ProjectCard = ({ title, image, description, repository, livesite }: Props) => {
   return (
         <Card className="w-full max-w-fit !bg-transparent sm:max-w-[356px] p-4 border-slate-50">
-            <CardHeader className="flex-start flex-col mx-auto !p-0 gap-2.5">
-                <div className="h-fit w-full">
-                    <Image src={image == null ? "" : image} alt="image-card" width={320} height={320} className="h-full rounded-md object-cover cursor-pointer"/>
+            <CardHeader className="flex-start flex-col mx-auto !p-0 gap-2.5 ">
+                <div className="group relative image-svg h-fit w-full filter ">
+                    <Image src={image} alt="image-card" width={320} height={320} className="relative h-full rounded-md object-cover hover:blur-sm transition-all duration-300 cursor-pointer"/>
+                    <div className="flex-center absolute space-x-4 opacity-0 group-hover:opacity-100 top-16 left-24">
+                        <Link href={repository}>
+                            <AiFillGithub width={50} height={50} className="w-10 h-10 bg-gray-800 p-2 rounded-full hover:bg-gray-200 cursor-pointer"/>
+                        </Link>
+                        <Link href={livesite}>
+                            <AiOutlineLink width={50} height={50} className="w-10 h-10 text-white bg-gray-800 p-2 rounded-full hover:bg-gray-200 cursor-pointer"/>
+                        </Link>
+                    </div>
                 </div>
                 <CardTitle className="flex-start">{title}</CardTitle>
             </CardHeader>

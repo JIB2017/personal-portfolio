@@ -67,7 +67,7 @@ export const Btn2 = () => {
               clipRule="evenodd"
             ></path>
           </svg>
-          <span className="body-semibold text-btn2">Ver cv ahoraaa!</span>
+          <span className="body-semibold text-btn2">Ver curriculum</span>
         </div>
       </div>
     </Link>

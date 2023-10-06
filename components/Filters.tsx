@@ -40,7 +40,7 @@ const Filters = () => {
             onClick={() => handlerFilter(filter)}
             className={`${
               active === filter ? "gradient_purple-blue" : ""
-            } whitespace-nowrap rounded-lg px-8 py-2.5 capitalize`}
+            } whitespace-nowrap rounded-lg px-8 py-2.5 capitalize group-hover:scale-105 duration-100 ease-in-out transition-transform`}
           >
             {filter}
           </button>

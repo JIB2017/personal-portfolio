@@ -25,7 +25,7 @@ const Page = async ({ searchParams }: Props) => {
     <main className="flex-center flex-col paddings w-full mx-auto">
       <div></div>
       <MouseTrack />
-      <section className="flex-center flex-row nav-padding w-full">
+      <section id="hero" className="flex-center flex-row nav-padding w-full">
         <div className="flex-start flex-col w-full h-auto">
           <h1 className="heading2 text-gradient_purple-blue py-4">
             Juan Ignacio Blacutt
@@ -45,7 +45,7 @@ const Page = async ({ searchParams }: Props) => {
         </div>
       </section>
 
-      <h2 className="heading2 text-gradient-grey p-4 mt-4">Proyectos</h2>
+      <h2 id="projects" className="heading2 text-gradient-grey p-4 mt-4">Proyectos</h2>
       <Filters />
       {/* Proyectos */}
       <section className="flex-center flex-row text-white w-full flex-wrap gap-8 mt-8 mb-8">
@@ -55,7 +55,7 @@ const Page = async ({ searchParams }: Props) => {
       </section>
 
       {/* Skills */}
-      <h2 className="heading2 text-gradient-grey p-4 mt-12">Skills</h2>
+      <h2 id="skills" className="heading2 text-gradient-grey p-4 mt-12">Skills</h2>
       <Skills />
       <div id="blob">
         <div></div>

@@ -9,24 +9,28 @@ const Navbar = () => {
             <Image src="" alt="logo" />
         </Link> */}
         <ul className="flex-center gap-x-12">
-            <li className="paragraph-regular !font-semibold text-white-800">
-                <Link href="#">
+            <li className="group relative paragraph-regular !font-semibold text-white-800">
+                <Link href="#hero" className="">
                     Home
+                    <div className="absolute w-full h-1 gradient_blue-purple bottom-0 left-0 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"/>
                 </Link>
             </li>
-            <li className="paragraph-regular !font-semibold text-white-800">
-                <Link href="#projects">
+            <li className="group relative paragraph-regular !font-semibold text-white-800">
+                <Link href="#projects" className="">
                     Projects
+                    <div className="absolute w-full h-1 gradient_blue-purple bottom-0 left-0 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"/>
                 </Link>
             </li>
-            <li className="paragraph-regular !font-semibold text-white-800">
-                <Link href="#skills">
+            <li className="group relative paragraph-regular !font-semibold text-white-800">
+                <Link href="#skills" className="">
                     Skills
+                    <div className="absolute w-full h-1 gradient_blue-purple bottom-0 left-0 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"/>
                 </Link>
             </li>
-            <li className="paragraph-regular !font-semibold text-white-800">
-                <Link href="#about">
+            <li className="group relative paragraph-regular !font-semibold text-white-800">
+                <Link href="#about" className="">
                     About
+                    <div className="absolute w-full h-1 gradient_blue-purple bottom-0 left-0 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"/>
                 </Link>
             </li>
         </ul>

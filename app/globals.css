@@ -6,7 +6,7 @@
 
 * {
   font-family: "Poppins", sans-serif;
-  user-select: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,6 +22,7 @@ body {
   .hero-height {
     @apply min-h-[calc(100vh-100px)];
   }
+
 
   .text-gradient {
     background: linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100.78%);
@@ -391,8 +392,8 @@ body {
 }
 
 #blob {
-  background: linear-gradient(90deg, #4c73ff 0%, #73e0f8 100%);
-  height: 500px;
+  background: linear-gradient(to right, aquamarine, mediumpurple);
+  height: 700px;
   aspect-ratio: 1;
   position: absolute;
   border-radius: 50%;
@@ -401,7 +402,8 @@ body {
   translate: -50% -50%;
   opacity: 0.2;
   animation: rotate 12s linear infinite;
-  filter: blur(200px);
+  filter: blur(150px);
+  pointer-events: none;
 }
 
 #blob > div {
@@ -410,12 +412,14 @@ body {
   aspect-ratio: 1;
   position: absolute;
   border-radius: 50%;
-  left: 20%;
-  top: 20%;
-  translate: -20% -20%;
-  opacity: 0.7;
+  left: 40%;
+  top: 40%;
+  translate: -50% -50%;
+  opacity: 0.2;
   animation: rotate 12s linear infinite;
   filter: blur(200px);
+  z-index: -1;
+  pointer-events: none;
 }
 
 @keyframes rotate {
@@ -437,6 +441,7 @@ body {
   position: absolute;
   z-index: 2;
   backdrop-filter: blur(200px);
+  z-index: -1;
 }
 
 
