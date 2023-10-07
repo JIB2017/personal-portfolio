@@ -214,17 +214,7 @@ body {
 }
 
 .bg-landing-rainbow {
-  background-image: conic-gradient(
-    from 180deg at 50% 50%,
-    #3fdcf7 0deg,
-    #1890ff 51.43deg,
-    #6813cb 102.86deg,
-    #ff003d 154.29deg,
-    #ff8a00 205.71deg,
-    #ffd600 257.14deg,
-    #67be23 308.57deg,
-    #3fdcf7 1turn
-  );
+  background-image: linear-gradient(to right, #ff003d, #ff8a00, #ffd600, #67be23, #3fdcf7);
 }
 
 .animate-spin-slow {
@@ -239,7 +229,7 @@ body {
   animation-play-state: paused;
 }
 
-.animation-running {
+.running {
   animation-play-state: running;
 }
 
@@ -400,51 +390,48 @@ body {
   left: 50%;
   top: 50%;
   translate: -50% -50%;
-  opacity: 0.2;
+  opacity: 0.4;
   animation: rotate 12s linear infinite;
   filter: blur(150px);
   pointer-events: none;
 }
 
 #blob > div {
-  background: linear-gradient(to right, aquamarine, mediumpurple);
-  height: 500px;
+  background: linear-gradient(to right, aquamarine, gold);
+  height: 600px;
   aspect-ratio: 1;
   position: absolute;
   border-radius: 50%;
   left: 40%;
   top: 40%;
   translate: -50% -50%;
-  opacity: 0.2;
-  animation: rotate 12s linear infinite;
+  opacity: 0.5;
+  animation: spin 8s linear infinite;
   filter: blur(200px);
   z-index: -1;
   pointer-events: none;
 }
 
 @keyframes rotate {
-  from {
-    rotate: 0deg;
+  0% {
+    transform: scale(1);
   }
-
   50% {
-    scale: 1 1.5;
+    transform: scale(1.2);
   }
-  to {
-    rotate: 360deg;
+  100% {
+    transform: scale(1);
   }
 }
 
-#blur {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: 2;
-  backdrop-filter: blur(200px);
-  z-index: -1;
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
-
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {

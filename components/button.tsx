@@ -8,7 +8,7 @@ export const Btn1 = () => {
     >
       {/* Animacion */}
       <div className="absolute -left-0.5 -top-0.5 blur overflow-hidden rounded-lg w-[calc(100%+0.25rem)] h-[calc(100%+0.25rem)] z-[-1] ">
-        <div className="absolute w-[125%] aspect-square h-auto left-[-12.5%] top-[-120px] bg-landing-rainbow animate-spin-slow  animation-paused group-hover:animation-running" />
+        <div className="absolute w-[125%] aspect-square h-auto left-[-12.5%] top-[-120px] bg-landing-rainbow animate-spin-slow  animation-paused group-hover:running" />
       </div>
       {/* Contenido */}
       <div className="bg-white-0 rounded-lg px-10 py-4">

@@ -6,6 +6,8 @@ import { getProjects } from "@/sanity/actions";
 import ProjectCard from "@/components/ProjectCard";
 import Skills from "@/components/Skills";
 import MouseTrack from "../../MouseTrack";
+import AboutMe from "@/components/AboutMe";
+import Footer from "@/components/Footer";
 
 export const revalidate = 900;
 
@@ -57,9 +59,16 @@ const Page = async ({ searchParams }: Props) => {
       {/* Skills */}
       <h2 id="skills" className="heading2 text-gradient-grey p-4 mt-12">Skills</h2>
       <Skills />
+      {/* Blob effect mousetrack */}
       <div id="blob">
         <div></div>
       </div>
+
+      {/* About me */}
+      <AboutMe />
+
+      {/* Pie de página */}
+      <Footer />
     </main>
   );
 };
