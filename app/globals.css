@@ -280,6 +280,11 @@ body {
   }
 }
 
+.svgcenter {
+  top: 35%;
+  left: 33%;
+}
+
 .text-gradient_purple-blue {
   background: linear-gradient(90deg, #4c73ff 0%, #73e0f8 100%);
   -webkit-background-clip: text;
@@ -384,7 +389,7 @@ body {
   position: relative;
   z-index: 2;
 }
-
+/* Aqui comienzan los estilos para el blob */
 #blob {
   background: linear-gradient(to right, aquamarine, mediumpurple);
   height: 700px;
