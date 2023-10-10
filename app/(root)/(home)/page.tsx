@@ -27,9 +27,9 @@ const Page = async ({ searchParams }: Props) => {
     <main className="flex-center flex-col paddings w-full mx-auto">
       <div></div>
       <MouseTrack />
-      <section id="hero" className="flex-center flex-row nav-padding w-full">
+      <section id="hero" className="flex-center flex-row nav-padding w-full z-10">
         <div className="flex-start flex-col w-full h-auto">
-          <h1 className="heading2 text-gradient_purple-blue py-4">
+          <h1 className="heading2 text-gradient_purple-blue py-4 nonselect">
             Juan Ignacio Blacutt
           </h1>
           <TypingAnimation />
@@ -47,17 +47,17 @@ const Page = async ({ searchParams }: Props) => {
         </div>
       </section>
 
-      <h2 id="projects" className="heading2 text-gradient-grey p-4 mt-4">Proyectos</h2>
+      <h2 id="projects" className="heading2 text-gradient-grey p-4 mt-4 z-10 nonselect">Proyectos</h2>
       <Filters />
       {/* Proyectos */}
-      <section className="flex-center flex-row text-white w-full flex-wrap gap-8 mt-8 mb-8">
+      <section className="flex-center flex-row text-white w-full flex-wrap gap-8 mt-8 mb-8 z-10">
           {projects && projects?.map((card: any) => (
             <ProjectCard key={card._id} title={card.title} image={card.image} description={card.description} repository={card.repository} livesite={card.livesite}/>
             ))}
       </section>
 
       {/* Skills */}
-      <h2 id="skills" className="heading2 text-gradient-grey p-4 mt-12">Skills</h2>
+      <h2 id="skills" className="heading2 text-gradient-grey p-4 mt-12 z-10 nonselect">Skills</h2>
       <Skills />
       {/* Blob effect mousetrack */}
       <div id="blob">

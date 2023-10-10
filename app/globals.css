@@ -203,6 +203,10 @@ body {
   color: rgb(255, 255, 255);
 }
 
+.nonselect {
+  user-select: none;
+}
+
 .text-gradient-grey {
   background: linear-gradient(
     121.57deg,
