@@ -5,9 +5,11 @@ import Filters from "@/components/Filters";
 import { getProjects } from "@/sanity/actions";
 import ProjectCard from "@/components/ProjectCard";
 import Skills from "@/components/Skills";
-import MouseTrack from "../../MouseTrack";
+import MouseTrack from "@/components/MouseTrack";
 import AboutMe from "@/components/AboutMe";
 import Footer from "@/components/Footer";
+import Image from "next/image";
+// import Scroll from "@/components/SmoothScrolling";
 
 export const revalidate = 900;
 
@@ -21,12 +23,12 @@ const Page = async ({ searchParams }: Props) => {
     page: "1",
   });
 
-  //console.log(projects);
+  // console.log(projects);
 
   return (
-    <main className="flex-center flex-col paddings w-full mx-auto">
-      <div></div>
+    <main className="flex-center flex-col paddings w-full mx-auto" id="scroll-container">
       <MouseTrack />
+      {/* <Scroll /> */}
       <section id="hero" className="flex-center flex-row nav-padding w-full z-10">
         <div className="flex-start flex-col w-full h-auto">
           <h1 className="heading2 text-gradient_purple-blue py-4 nonselect">
@@ -50,18 +52,19 @@ const Page = async ({ searchParams }: Props) => {
       <h2 id="projects" className="heading2 text-gradient-grey p-4 mt-4 z-10 nonselect">Proyectos</h2>
       <Filters />
       {/* Proyectos */}
-      <section className="flex-center flex-row text-white w-full flex-wrap gap-8 mt-8 mb-8 z-10">
+      <section className="relative flex-center flex-row text-white w-full flex-wrap gap-8 mt-8 mb-8 z-10">
+        {/* <Image src="/lluvia-pixeles-sin-fondo.webp" alt="background-pixels" className="absolute" fill={true} objectFit="cover" /> */}
           {projects && projects?.map((card: any) => (
-            <ProjectCard key={card._id} title={card.title} image={card.image} description={card.description} repository={card.repository} livesite={card.livesite}/>
+            <ProjectCard key={card._id} title={card.title} image={card.image} technologies={card.technologies} description={card.description} repository={card.repository} livesite={card.livesite}/>
             ))}
       </section>
 
       {/* Skills */}
-      <h2 id="skills" className="heading2 text-gradient-grey p-4 mt-12 z-10 nonselect">Skills</h2>
+      <h2 id="skills" className="heading2 text-gradient-grey p-4 mt-20 mb-10 z-10 nonselect">Skills</h2>
       <Skills />
       {/* Blob effect mousetrack */}
       <div id="blob">
-        <div></div>
+        <div />
       </div>
 
       {/* About me */}

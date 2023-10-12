@@ -40,14 +40,14 @@ const ProjectCard = ({ title, image, technologies, description, repository, live
                     </div>
                 </div>
             </CardHeader>
-            <CardContent className="flex-start flex-row !p-0 gap-1 mt-2">
+            <CardContent className="flex-start flex-row !p-0 gap-1 mt-4">
                 {skills.map((skill): any => (
                     skill in logos && 
                         <Image key={skill} src={logos[skill]} alt="skill" width={30} height={30} className="w-10 h-10 rounded-sm"/>
                     ))}
             </CardContent>
-            <CardFooter className="flex-start flex-col gap-2 !p-0 mt-2">
-                <CardTitle>{title}</CardTitle>
+            <CardFooter className="flex-start flex-col gap-2 !p-0 mt-4">
+                <CardTitle className="base-bold">{title}</CardTitle>
                 <p>{description}</p>
             </CardFooter>
         </Card>

@@ -7,15 +7,15 @@ import { useRef } from "react";
 
 const Skills = () => {
   const skills = [
+    "Typescript",
+    "Tailwind",
+    "Next",
+    "Redux",
+    "SCSS",
+    "React",
     "HTML",
     "CSS",
     "Javascript",
-    "Typescript",
-    "Tailwind",
-    "React",
-    "Redux",
-    "Next",
-    "SCSS",
     "MySQL",
     "PostgreSQL",
     "Node",
@@ -27,8 +27,7 @@ const Skills = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section id="cards" ref={ref}>
-      {" "}
+    <section id="cards" className="z-10" ref={ref}>
       {/* Cards */}
       {skills.map((skill, i) => (
         <motion.div
@@ -51,7 +50,7 @@ const Skills = () => {
         >
           {" "}
           {/* Card */}
-          <div className="card-content flex-center flex-col bg-white-0 gap-3">
+          <div className="card-content flex-center flex-col gap-3">
             <div className="h-fit w-full flex-center flex-col">
               <Image
                 src={skill in logos ? logos[skill] : ""}
