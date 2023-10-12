@@ -27,7 +27,7 @@ const Skills = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section id="cards" className="z-10" ref={ref}>
+    <section id="cards" ref={ref}>
       {/* Cards */}
       {skills.map((skill, i) => (
         <motion.div
@@ -46,7 +46,7 @@ const Skills = () => {
             duration: 0.5,
             delay: i * 0.2,
           }}
-          className="card"
+          className="card cursor-pointer"
         >
           {" "}
           {/* Card */}
@@ -57,10 +57,10 @@ const Skills = () => {
                 alt="logo"
                 width={60}
                 height={60}
-                className="h-full object-cover cursor-pointer"
+                className="h-full object-cover"
               />
             </div>
-            <p className="body-semibold text-blue-500">{skill}</p>
+            <p className="body-semibold text-gradient-grey2">{skill}</p>
           </div>
         </motion.div>
       ))}
