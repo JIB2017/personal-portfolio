@@ -54,8 +54,8 @@ const Page = async ({ searchParams }: Props) => {
       {/* Proyectos */}
       <section className="relative flex-center flex-row text-white w-full flex-wrap gap-8 mt-8 mb-8 z-10">
         {/* <Image src="/lluvia-pixeles-sin-fondo.webp" alt="background-pixels" className="absolute" fill={true} objectFit="cover" /> */}
-          {projects && projects?.map((card: any) => (
-            <ProjectCard key={card._id} title={card.title} image={card.image} technologies={card.technologies} description={card.description} repository={card.repository} livesite={card.livesite}/>
+          {projects && projects?.map((card: any, i: any) => (
+            <ProjectCard key={card._id} delay={i} title={card.title} image={card.image} technologies={card.technologies} description={card.description} repository={card.repository} livesite={card.livesite}/>
             ))}
       </section>
 
