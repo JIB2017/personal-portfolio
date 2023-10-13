@@ -15,7 +15,7 @@ import { useRef } from "react";
 
 interface Props {
     title: string,
-    delay: any,
+    delay: number,
     image: string,
     technologies: string,
     description: string,

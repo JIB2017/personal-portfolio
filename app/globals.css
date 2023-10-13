@@ -457,7 +457,9 @@ body {
   }
 }
 
-
+.bgfooter {
+  background: #0f0f3d;
+}
 
 .bgimage {
   background: linear-gradient(45deg, gold 6%, rgba(1,93,132,0) 14%, rgba(1,93,132,0) 84%, gold 100%);

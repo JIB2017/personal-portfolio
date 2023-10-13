@@ -6,7 +6,7 @@ import { useParams, useRouter } from "next/navigation";
 
 const Filters = () => {
   const filters = ["fullstack", "frontend", "backend"];
-  const [active, setActive] = useState("");
+  const [active, setActive] = useState<string>("");
   const searchParams = useParams();
   const router = useRouter();
 
@@ -32,7 +32,7 @@ const Filters = () => {
   };
 
   return (
-    <div className="flex-center mx-auto text-white-800 no-scrollbar  py-12">
+    <div className="flex-center mx-auto text-white-800 no-scrollbar py-12">
       <ul className="flex-between w-full gap-14">
         {filters.map((filter) => (
           <button

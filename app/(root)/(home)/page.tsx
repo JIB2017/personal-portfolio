@@ -26,10 +26,10 @@ const Page = async ({ searchParams }: Props) => {
   // console.log(projects);
 
   return (
-    <main className="flex-center flex-col paddings w-full mx-auto" id="scroll-container">
+    <main className="flex-center flex-col w-full mt-20 mx-auto">
       <MouseTrack />
       {/* <Scroll /> */}
-      <section id="hero" className="flex-center flex-row nav-padding w-full z-10">
+      <section id="hero" className="flex-center flex-row paddings w-full z-10">
         <div className="flex-start flex-col w-full h-auto">
           <h1 className="heading2 text-gradient_purple-blue py-4 nonselect">
             Juan Ignacio Blacutt
@@ -49,18 +49,18 @@ const Page = async ({ searchParams }: Props) => {
         </div>
       </section>
 
-      <h2 id="projects" className="heading2 text-gradient-grey p-4 mt-4 z-10 nonselect">Proyectos</h2>
+      <h2 id="projects" className="heading2 text-gradient-grey pt-36 pb-16 z-10 nonselect">Proyectos</h2>
       <Filters />
       {/* Proyectos */}
-      <section className="relative flex-center flex-row text-white w-full flex-wrap gap-8 mt-8 mb-8 z-10">
+      <section className="relative flex-center flex-row text-white w-full flex-wrap gap-8 paddings mt-8 mb-8 z-10">
         {/* <Image src="/lluvia-pixeles-sin-fondo.webp" alt="background-pixels" className="absolute" fill={true} objectFit="cover" /> */}
-          {projects && projects?.map((card: any, i: any) => (
+          {projects && projects?.map((card: {[key: string]: string}, i: number) => (
             <ProjectCard key={card._id} delay={i} title={card.title} image={card.image} technologies={card.technologies} description={card.description} repository={card.repository} livesite={card.livesite}/>
             ))}
       </section>
 
       {/* Skills */}
-      <h2 id="skills" className="heading2 text-gradient-grey p-4 mt-20 mb-10 z-10 nonselect">Skills</h2>
+      <h2 id="skills" className="heading2 text-gradient-grey p-4 pb mt-20 mb-12 z-10 nonselect">Skills</h2>
       <Skills />
       {/* Blob effect mousetrack */}
       <div >
@@ -70,6 +70,7 @@ const Page = async ({ searchParams }: Props) => {
       {/* About me */}
       <AboutMe />
 
+      <div className="w-full lg:py-28 sm:py-12"/>
       {/* Pie de página */}
       <Footer />
     </main>
