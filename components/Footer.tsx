@@ -1,12 +1,13 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
   return (
     <section className="flex-between w-full px-12 py-6 mx-10 bgfooter border-t border-blue-700/40">
       <div className="flex-center flex-row">
-        <p className="w-full paragraph-regular text-white-800">
+        <p className="w-full body-regular text-white-800">
           © 2023, por{" "}
-          <span className="paragraph-semibold text-gradient_purple-blue">
+          <span className="body-semibold text-gradient_purple-blue">
             Juan Ignacio Blacutt
           </span>{" "}
           desde Buenos Aires para donde sea que estés con
@@ -28,14 +29,17 @@ const Footer = () => {
         </svg>
       </div>
       <div className="flex flex-row gap-2 text-gray-400">
-        <Link href="https://www.linkedin.com/in/juan-ignacio-blacutt-web-design/">
+        <Link href="mailto:blacuttjuan07@gmail.com" target="blank" className="flex-center">
+          <p className="body-regular">blacuttjuan07@gmail.com</p>
+        </Link>
+        <Link href="https://www.linkedin.com/in/juan-ignacio-blacutt-web-design/" target="blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
             viewBox="0 0 24 24"
             fill="none"
-            className="h-9 w-9"
+            className="h-7 w-7"
           >
             <path
               fill="currentColor"
@@ -43,14 +47,14 @@ const Footer = () => {
             ></path>
           </svg>
         </Link>
-        <Link href="https://github.com/JIB2017">
+        <Link href="https://github.com/JIB2017" target="blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
             viewBox="0 0 24 24"
             fill="none"
-            className="h-9 w-9"
+            className="h-7 w-7"
           >
             <path
               fill="currentColor"
@@ -60,14 +64,14 @@ const Footer = () => {
             ></path>
           </svg>
         </Link>
-        <Link href="https://twitter.com/JuanBlacutt2">
+        <Link href="https://twitter.com/JuanBlacutt2" target="blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
             viewBox="0 0 50 50"
             fill="none"
-            className="h-9 w-9"
+            className="h-7 w-7"
           >
             <path
               fill="currentColor"
@@ -77,7 +81,7 @@ const Footer = () => {
             ></path>
           </svg>
         </Link>
-        <Link href="blacuttjuan07@gmail.com"></Link>
+        
       </div>
     </section>
   );

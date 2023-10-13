@@ -62,15 +62,15 @@ body {
   }
 
   .body-regular {
-    @apply text-[16px] font-normal leading-[20.8px];
+    @apply text-[17px] font-normal leading-[20.8px];
   }
 
   .body-semibold {
-    @apply text-[16px] font-semibold leading-[20.8px];
+    @apply text-[17px] font-semibold leading-[20.8px];
   }
 
   .body-medium {
-    @apply text-[16px] font-medium leading-[22.4px];
+    @apply text-[17px] font-medium leading-[22.4px];
   }
 
   .small-regular {
