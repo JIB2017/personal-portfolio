@@ -46,7 +46,7 @@ const Skills = () => {
             duration: 0.5,
             delay: i * 0.2,
           }}
-          className="card cursor-pointer"
+          className="card cursor-pointer transition-all duration-100"
         >
           {" "}
           {/* Card */}

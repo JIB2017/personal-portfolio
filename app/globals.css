@@ -367,7 +367,7 @@ body {
   width: 240px;
 }
 .card:hover {
-  border: 1px gold solid;
+  border: 1px rgba(255, 255, 255, 0.33) solid;
 }
 .card:hover::before {
   opacity: 1;
