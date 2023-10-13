@@ -46,9 +46,9 @@ const ProjectCard = ({ title, delay, image, technologies, description, repositor
       }}>
         <Card className="w-full max-w-fit !bg-transparent sm:max-w-[356px] p-4 bg-blue-0 border-white-500/30 rounded-md" ref={ref}>
             <CardHeader className="flex-start flex-col mx-auto !p-0 gap-2.5">
-                <div className="group relative h-fit w-full">
-                    <Image src={image} alt="image-card" width={320} height={320} className="relative h-full rounded-md  hover:scale-110 hover:-translate-y-2 transition-all duration-300 cursor-pointer"/>
-                    <div className="flex-center absolute space-x-4 opacity-0 group-hover:opacity-100 svgcenter nonselect">
+                <div className="group relative h-fit w-full grayscale hover:grayscale-0 transition-all duration-400">
+                    <Image src={image} alt="image-card" width={320} height={320} className="relative h-full rounded-md  cursor-pointer"/>
+                    <div className="flex-center absolute space-x-4 opacity-0 group-hover:opacity-100 svgcenter transition-all duration-400  nonselect">
                         <Link href={repository} target="blank">
                             <AiFillGithub width={50} height={50} className="w-10 h-10 bg-gray-800 p-2 rounded-full hover:bg-gray-200 hover:text-black-200 cursor-pointer"/>
                         </Link>
