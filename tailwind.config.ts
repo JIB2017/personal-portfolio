@@ -30,6 +30,10 @@ module.exports = {
       },
     },
     extend: {
+      spacing: {
+        '128': '32rem',
+        '144': '36rem',
+      },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         inter: ["Inter", "sans-serif"],

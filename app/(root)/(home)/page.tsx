@@ -60,7 +60,7 @@ const Page = async ({ searchParams }: Props) => {
       </section>
 
       {/* Skills */}
-      <h2 id="skills" className="heading2 text-gradient-grey p-4 pb mt-20 mb-12 z-10 nonselect">Skills</h2>
+      {/* <h2 id="skills" className="heading2 text-gradient-grey p-4 pb mt-20 mb-12 z-10 nonselect">Skills</h2> */}
       <Skills />
       {/* Blob effect mousetrack */}
       <div >

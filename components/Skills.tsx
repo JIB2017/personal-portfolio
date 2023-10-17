@@ -27,7 +27,14 @@ const Skills = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section id="cards" ref={ref}>
+    <section className="flex-center flex-col z-10">
+      {/* Title */}
+      {/* Gradients */}
+      <div className="gradients">
+        <div className="circle right-auto -top-144 cirle-purple"></div>
+      </div>
+      <h2 id="skills" className="heading2 text-gradient-grey p-4 my-20 z-10 nonselect">Skills</h2>
+      <div id="cards" ref={ref}>
       {/* Cards */}
       {skills.map((skill, i) => (
         <motion.div
@@ -65,6 +72,7 @@ const Skills = () => {
           </div>
         </motion.div>
       ))}
+      </div>
     </section>
   );
 };
