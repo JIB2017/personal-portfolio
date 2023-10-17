@@ -136,6 +136,26 @@ body {
   .no-focus {
     @apply focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0 !important;
   }
+
+  .gradients {
+    @apply absolute flex-1 flex-center -z-10;
+  }
+
+  .circle {
+    @apply absolute rounded-full h-96 w-96;
+  }
+
+  .radial-orange {
+    @apply -left-80 -top-80 cirle-orange;
+  }
+
+  .radial-purple {
+    @apply -right-80 -top-80 cirle-purple;
+  }
+
+  .radial-yellow {
+    @apply left-auto top-auto -bottom-72 cirle-yellow;
+  }
 }
 
 .frame {
@@ -194,6 +214,18 @@ body {
 .bg-jib {
   --tw-bg-opacity: 1;
   background-color: rgb(10 10 41 / var(--tw-bg-opacity));
+}
+
+.cirle-orange {
+  background: radial-gradient(50% 50% at 50% 50%,rgba(255,61,0,.15) 0,hsla(0,0%,100%,0) 100%);
+}
+
+.cirle-purple {
+  background: radial-gradient(50% 50% at 50% 50%,rgba(101,31,255,.15) 0,hsla(0,0%,100%,0) 100%);
+}
+
+.cirle-yellow {
+  background: radial-gradient(50% 50% at 50% 50%,rgba(255,213,79,.2) 0,hsla(0,0%,100%,0) 100%);
 }
 
 .text-btn {

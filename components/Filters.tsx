@@ -33,6 +33,11 @@ const Filters = () => {
 
   return (
     <div className="flex-center mx-auto text-white-800 no-scrollbar py-12">
+      <div className="gradients">
+        <div className="circle radial-orange"></div>
+        <div className="circle radial-purple"></div>
+        <div className="circle radial-yellow"></div>
+      </div>
       <ul className="flex-between w-full gap-14">
         {filters.map((filter) => (
           <button
