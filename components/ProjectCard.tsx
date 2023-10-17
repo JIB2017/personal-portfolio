@@ -48,14 +48,23 @@ const ProjectCard = ({ title, delay, image, technologies, description, repositor
             <CardHeader className="flex-start flex-col mx-auto !p-0 gap-2.5">
                 <div className="group relative h-fit w-full grayscale hover:grayscale-0 transition-all duration-400">
                     <Image src={image} alt="image-card" width={320} height={320} className="relative h-full rounded-md  cursor-pointer"/>
-                    <div className="flex-center absolute space-x-4 opacity-0 group-hover:opacity-100 svgcenter transition-all duration-400 nonselect">
-                        <Link href={repository} target="blank">
+                      {repository !== livesite ? (
+                        <div className="flex-center absolute space-x-4 opacity-0 group-hover:opacity-100 svgcenter transition-all duration-400 nonselect">
+                          <Link href={repository} target="blank">
                             <AiFillGithub width={50} height={50} className="w-10 h-10 bg-gray-800 p-2 rounded-full hover:bg-gray-200 hover:text-black-200 cursor-pointer"/>
-                        </Link>
-                        <Link href={livesite} target="blank">
-                            <AiOutlineLink width={50} height={50} className="w-10 h-10 bg-gray-800 p-2 rounded-full hover:bg-gray-200 hover:text-black-200 cursor-pointer"/>
-                        </Link>
-                    </div>
+                          </Link>
+                          <Link href={livesite} target="blank">
+                              <AiOutlineLink width={50} height={50} className="w-10 h-10 bg-gray-800 p-2 rounded-full hover:bg-gray-200 hover:text-black-200 cursor-pointer"/>
+                          </Link>
+                        </div>
+                      ) : (
+                        <div className="flex-center absolute space-x-4 opacity-0 group-hover:opacity-100 singlesvgcenter transition-all duration-400 nonselect">
+                          <Link href={repository} target="blank">
+                            <AiFillGithub width={50} height={50} className="w-10 h-10 bg-gray-800 p-2 rounded-full hover:bg-gray-200 hover:text-black-200 cursor-pointer"/>
+                          </Link>
+                        </div>
+                      )}
+                        
                 </div>
             </CardHeader>
             <CardContent className="flex-start flex-row !p-0 gap-1 mt-4">
