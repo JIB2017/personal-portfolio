@@ -38,14 +38,14 @@ const Filters = () => {
         <div className="circle radial-purple"></div>
         <div className="circle radial-yellow"></div>
       </div>
-      <ul className="flex-between w-full gap-14">
+      <ul className="group flex-between w-full gap-14 transition-all">
         {filters.map((filter) => (
           <button
             key={filter}
             onClick={() => handlerFilter(filter)}
             className={`${
               active === filter ? "gradient_purple-blue" : ""
-            } whitespace-nowrap rounded-lg px-8 py-2.5 capitalize group-hover:scale-105 duration-100 ease-in-out transition-transform`}
+            } whitespace-nowrap rounded-lg px-8 py-2.5 capitalize hover:scale-105 bg-transparent transition-all`}
           >
             {filter}
           </button>
