@@ -15,7 +15,7 @@ const logos: {[key: string]: string} =
     Express: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
     Sanity : "https://images.crunchbase.com/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/exghybvcvdmerns27fff",
     Auth0: "https://cdn.worldvectorlogo.com/logos/auth0.svg",
-    Framer_Motion: "https://cdn.worldvectorlogo.com/logos/framer-motion.svg"
+    "Framer Motion": "https://cdn.worldvectorlogo.com/logos/framer-motion.svg"
     }
 ;
 
