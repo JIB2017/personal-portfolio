@@ -24,15 +24,6 @@ body {
     @apply min-h-[calc(100vh-100px)];
   }
 
-
-  .text-gradient {
-    background: linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100.78%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-  }
-
   .heading1 {
     @apply text-[64px] leading-[67.2px] font-bold;
   }
@@ -156,8 +147,23 @@ body {
   .radial-yellow {
     @apply left-auto top-auto -bottom-72 cirle-yellow;
   }
+
+  .radial-orange-center {
+    @apply left-96 top-4 cirle-orange;
+  }
+
+  .radial-purple-center {
+    @apply left-144 top-4 cirle-purple;
+  }
+
+  .radial-yellow-center {
+    @apply left-52 top-4 -bottom-72 cirle-yellow;
+  }
 }
 
+.bg-landing-linear-spectrum {
+  background-image: linear-gradient(90deg,#fffe00,#f93 12.5%,#ff4c4d 25%,#ed5ec9 37.5%,#8000ff 50%,#33f 62.5%,#0080ff 75%,#47ebeb 87.5%,#26d97f);
+}
 .frame {
   border-style: inset;
   border: 1px solid #40a0ff;
@@ -214,6 +220,14 @@ body {
 .bg-jib {
   --tw-bg-opacity: 1;
   background-color: rgb(10 10 41 / var(--tw-bg-opacity));
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 .cirle-orange {
