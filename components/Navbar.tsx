@@ -12,25 +12,25 @@ const Navbar = () => {
             <li className="group relative paragraph-regular !font-semibold text-white-800">
                 <Link href="#hero" className="">
                     Home
-                    <div className="absolute w-full h-1 rounded-full gradient_blue-purple bottom-0 left-0 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"/>
+                    <div className="absolute w-full h-px rounded-full gradient_blue-purple bottom-0 left-0 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"/>
                 </Link>
             </li>
             <li className="group relative paragraph-regular !font-semibold text-white-800">
                 <Link href="#projects" className="">
                     Projects
-                    <div className="absolute w-full h-1 rounded-full gradient_blue-purple bottom-0 left-0 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"/>
+                    <div className="absolute w-full h-px rounded-full gradient_blue-purple bottom-0 left-0 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"/>
                 </Link>
             </li>
             <li className="group relative paragraph-regular !font-semibold text-white-800">
                 <Link href="#skills" className="">
                     Skills
-                    <div className="absolute w-full h-1 rounded-full gradient_blue-purple bottom-0 left-0 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"/>
+                    <div className="absolute w-full h-px rounded-full gradient_blue-purple bottom-0 left-0 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"/>
                 </Link>
             </li>
             <li className="group relative paragraph-regular !font-semibold text-white-800">
                 <Link href="#about" className="">
                     About
-                    <div className="absolute w-full h-1 rounded-full gradient_blue-purple bottom-0 left-0 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"/>
+                    <div className="absolute w-full h-px rounded-full gradient_blue-purple bottom-0 left-0 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"/>
                 </Link>
             </li>
         </ul>
