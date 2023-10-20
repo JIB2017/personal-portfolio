@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <section className="flex-between w-full px-12 py-6 mx-10 bgfooter border-t border-blue-700/40">
-      <div className="flex-center flex-row">
+    <section className="flex-between xs:flex-col xs:gap-12 lg:flex-row w-full px-12 py-6 mx-10 bgfooter border-t border-blue-700/40">
+      <div className="flex-center xs:flex-col lg:flex-row">
         <p className="w-full body-regular text-white-800">
           © 2023, por{" "}
           <span className="body-semibold text-gradient_purple-blue">

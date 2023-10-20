@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const TypingAnimation = () => {
   return (
-    <div className="base-bold text-gradient-grey mt-2 py-4 nonselect">
+    <div className="sm:paragraph-semibold md:base-bold text-gradient-grey mt-2 py-4 whitespace-nowrap nonselect">
       <TypeAnimation
         sequence={[
           "Fullstack Developer",

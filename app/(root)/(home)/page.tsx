@@ -30,22 +30,18 @@ const Page = async ({ searchParams }: Props) => {
       <MouseTrack />
       {/* <Scroll /> */}
       <section id="hero" className="flex-center flex-row paddings w-full z-10">
-        <div className="flex-start flex-col w-full h-auto">
-          <h1 className="heading2 text-gradient_purple-blue py-4 nonselect">
+        <div className="xs:flex-center md:flex-start flex-col w-full h-auto">
+          <h1 className="xs:heading3 md:heading2 text-gradient_purple-blue py-4 whitespace-nowrap nonselect">
             Juan Ignacio Blacutt
           </h1>
           <TypingAnimation />
-          {/* <span className="heading2 text-gradient-grey mt-2">
-            Fullstack Developer
-          </span> */}
-          <div className="flex-between flex-row gap-12 mt-12">
+          <div className="flex justify-between flex-row xs:justify-center flex-wrap gap-12 mt-12">
             <Btn1 />
             <Btn2 />
           </div>
         </div>
-        <div className="flex-center w-full z-20">
+        <div className="flex-center w-full z-20 xs:hidden lg:flex">
           <BackgroundAnimation />
-          {/* <Image src="/BackgroundAnimation.svg" alt="background-animation" width={150} height={150} className="w-full"/> */}
         </div>
       </section>
 
@@ -70,7 +66,7 @@ const Page = async ({ searchParams }: Props) => {
       {/* About me */}
       <AboutMe />
 
-      <div className="w-full lg:py-28 sm:py-12"/>
+      <div className="w-full py-28"/>
       {/* Pie de página */}
       <Footer />
     </main>

@@ -38,7 +38,7 @@ const Filters = () => {
         <div className="circle radial-purple"></div>
         <div className="circle radial-yellow"></div>
       </div>
-      <ul className="group flex-between w-full gap-14 transition-all">
+      <ul className="group flex-between w-full sm:gap-4 md:gap-14 transition-all">
         {filters.map((filter) => (
           <button
             key={filter}
