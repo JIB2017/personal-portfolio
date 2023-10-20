@@ -13,8 +13,8 @@ const dataTab: Tab[] = [
     id: "educacion",
     content: (
       <ul className="list-none pl-2">
-        <li>Henry Full Stack Developer Bootcamp</li>
-        <li>Tecnicatura en Desarrollo Web</li>
+        <li><span className="text-white">Full Stack Developer Bootcamp</span> - Henry</li>
+        <li><span className="text-white">Tecnicatura en Desarrollo Web</span> - UNLAM</li>
       </ul>
     ),
   },
@@ -23,9 +23,9 @@ const dataTab: Tab[] = [
     id: "certificaciones",
     content: (
       <ul className="list-none pl-2">
-        <li>Full Stack Web Developer - HENRY</li>
-        <li>Bot Builder Rocketbot Expert - ROCKETBOT</li>
-        <li>Salesforce Dev Edition - LABSXD</li>
+        <li><span className="text-white">Full Stack Web Developer</span> - HENRY</li>
+        <li><span className="text-white">Bot Builder Rocketbot Expert</span> - ROCKETBOT</li>
+        <li><span className="text-white">Salesforce Dev Edition</span> - LABSXD</li>
       </ul>
     ),
   },
@@ -43,18 +43,17 @@ const AboutMe = () => {
         alt="computer"
         width={500}
         height={500}
-        className="bg-center bg-no-repeat bg-contain z-10"
+        className="bg-center bg-no-repeat bg-contain z-10 2xl:translate-x-20"
       />
       <div className="flex-start flex-col text-left h-full xs:mt-12 md:mt-4 z-10">
         <h2 className="heading3 text-gradient-grey mb-2 nonselect">Sobre Mi</h2>
         <p className="text-white-500 mt-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempor
-          venenatis iaculis. Vestibulum auctor hendrerit massa. Mauris
-          ullamcorper tortor non libero aliquet, eu congue tortor molestie. Cras
-          egestas mollis turpis. Nam pulvinar ac nisl luctus sodales. Proin sit
-          amet lacus nunc. In dictum cursus diam, sit amet venenatis quam
-          elementum luctus. Nunc magna enim, molestie sed leo eget, tristique
-          consectetur ipsum.
+          Hola! Si, como ya te habrás dado cuenta soy desarrollador Fullstack, pero... <br />
+          ¿Te estás preguntando si puedo ser un <span className="font-bold text-gradient_purple-blue">activo valioso</span> para tu empresa? <br />
+          Un desarrollador web que además de la programación está entusiasmado por
+          las últimas novedades en <span className="font-bold text-gradient_purple-blue">blockchain, inteligencia artificial y marketing digital</span>. <br />
+          Disfruté mucho el armar este portafolio pero, ¿sabes qué me gustaría mas? <br />
+          Trabajar en grandes proyectos ambiciosos y con un equipo, <span className="font-bold text-gradient_purple-blue">dandolo todo</span>.
         </p>
         <div className="flex-start flex-col mt-8">
           <ul className="flex-start flex-row gap-8">
