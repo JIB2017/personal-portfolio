@@ -29,7 +29,7 @@ body {
   }
 
   .heading2 {
-    @apply font-bold text-[48px] leading-[50.4px];
+    @apply font-bold text-[48px] leading-[60.4px];
   }
 
   .heading3 {
@@ -512,9 +512,22 @@ body {
   background: #0f0f3d;
 }
 
+.bgfooter2 {
+  background: rgba(15, 15, 61, 0.5);
+}
+
 .bgimage {
   background: linear-gradient(45deg, gold 6%, rgba(1,93,132,0) 14%, rgba(1,93,132,0) 84%, gold 100%);
 }
+
+.playgroundbg {
+  background-image: linear-gradient(90deg,#17174f00,#17174f),linear-gradient(180deg,rgba(0,0,0,.165),#00000054 50%,rgba(0,0,0,.165));
+}
+
+.bg-pixels {
+  background: url("/lluvia-pixeles-sin-fondo.webp");
+}
+
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {

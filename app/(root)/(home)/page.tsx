@@ -9,6 +9,7 @@ import MouseTrack from "@/components/MouseTrack";
 import AboutMe from "@/components/AboutMe";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import CTA from "@/components/CTA";
 // import Scroll from "@/components/SmoothScrolling";
 
 export const revalidate = 900;
@@ -36,8 +37,8 @@ const Page = async ({ searchParams }: Props) => {
           </h1>
           <TypingAnimation />
           <div className="flex justify-between flex-row xs:justify-center flex-wrap gap-12 mt-12">
-            <Btn1 />
-            <Btn2 />
+            <Btn1 text="Ver proyectos!" destiny="#projects" target="blank"/>
+            <Btn2 text="Ver curriculum" />
           </div>
         </div>
         <div className="flex-center w-full z-20 xs:hidden lg:flex">
@@ -65,8 +66,10 @@ const Page = async ({ searchParams }: Props) => {
 
       {/* About me */}
       <AboutMe />
+      {/* CTA */}
+      <CTA />
 
-      <div className="w-full py-28"/>
+      <div className="w-full py-20"/>
       {/* Pie de página */}
       <Footer />
     </main>

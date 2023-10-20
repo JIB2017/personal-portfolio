@@ -1,10 +1,17 @@
 import Link from "next/link";
 
-export const Btn1 = () => {
+interface Props {
+  text: string,
+  destiny?: string | "",
+  target?: string | "",
+}
+
+export const Btn1 = ({text, destiny, target}: Props) => {
   return (
     <Link
-      href="#projects"
-      className="group appearance-none focus:outline-none block relative text-bg-jib hover:no-underline hover:text-bg-jib z-[1] "
+      href={destiny || ""}
+      className="group appearance-none focus:outline-none block relative text-bg-jib hover:no-underline hover:text-bg-jib z-[1]"
+      target={target}
     >
       {/* Animacion */}
       <div className="absolute -left-0.5 -top-0.5 blur overflow-hidden rounded-lg w-[calc(100%+0.25rem)] h-[calc(100%+0.25rem)] z-[-1] ">
@@ -27,14 +34,14 @@ export const Btn1 = () => {
               clipRule="evenodd"
             ></path>
           </svg>
-          <span className="body-semibold">Ver proyectos!</span>
+          <span className="body-semibold">{text}</span>
         </div>
       </div>
     </Link>
   );
 };
 
-export const Btn2 = () => {
+export const Btn2 = ({text}: Props) => {
   return (
     <Link
       href="https://drive.google.com/file/d/1QN-bNMh5QxO_hCMuhGenpnQ9R-uVUcgb/view?usp=sharing"
@@ -67,7 +74,7 @@ export const Btn2 = () => {
               clipRule="evenodd"
             ></path>
           </svg>
-          <span className="body-semibold text-btn2">Ver curriculum</span>
+          <span className="body-semibold text-btn2">{text}</span>
         </div>
       </div>
     </Link>

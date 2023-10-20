@@ -81,7 +81,6 @@ const Footer = () => {
             ></path>
           </svg>
         </Link>
-        
       </div>
     </section>
   );

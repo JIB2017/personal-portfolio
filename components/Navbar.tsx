@@ -10,26 +10,26 @@ const Navbar = () => {
         </Link> */}
         <ul className="flex-center gap-x-12">
             <li className="group relative paragraph-regular !font-semibold text-white-800">
-                <Link href="#hero" className="">
+                <Link href="#hero">
                     Home
                     <div className="absolute w-full h-px rounded-full gradient_blue-purple bottom-0 left-0 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"/>
                 </Link>
             </li>
             <li className="group relative paragraph-regular !font-semibold text-white-800">
-                <Link href="#projects" className="">
-                    Projects
+                <Link href="#projects">
+                    Proyectos
                     <div className="absolute w-full h-px rounded-full gradient_blue-purple bottom-0 left-0 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"/>
                 </Link>
             </li>
             <li className="group relative paragraph-regular !font-semibold text-white-800">
-                <Link href="#skills" className="">
+                <Link href="#skills">
                     Skills
                     <div className="absolute w-full h-px rounded-full gradient_blue-purple bottom-0 left-0 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"/>
                 </Link>
             </li>
             <li className="group relative paragraph-regular !font-semibold text-white-800">
-                <Link href="#about" className="">
-                    About
+                <Link href="#about">
+                    Sobre mi
                     <div className="absolute w-full h-px rounded-full gradient_blue-purple bottom-0 left-0 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"/>
                 </Link>
             </li>
