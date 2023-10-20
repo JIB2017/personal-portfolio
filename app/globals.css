@@ -464,7 +464,7 @@ body {
   left: 50%;
   top: 50%;
   translate: -50% -50%;
-  opacity: 0.4;
+  opacity: 0.3;
   animation: rotate 12s linear infinite;
   filter: blur(150px);
   pointer-events: none;
@@ -472,7 +472,7 @@ body {
 }
 
 #blob > div {
-  background: linear-gradient(to right, aquamarine, cyan);
+  background: linear-gradient(to right, aquamarine, gold);
   height: 600px;
   aspect-ratio: 1;
   position: absolute;
@@ -480,7 +480,7 @@ body {
   left: 40%;
   top: 40%;
   translate: -50% -50%;
-  opacity: 0.5;
+  opacity: 0.4;
   animation: spin 8s linear infinite;
   filter: blur(200px);
   z-index: -1;
