@@ -10,7 +10,7 @@ export const Btn1 = ({text, destiny, target}: Props) => {
   return (
     <Link
       href={destiny || ""}
-      className="group appearance-none focus:outline-none block relative text-bg-jib hover:no-underline hover:text-bg-jib z-[1]"
+      className="group appearance-none focus:outline-none block relative text-bg-jib hover:no-underline hover:text-bg-jib z-10"
       target={target}
     >
       {/* Animacion */}
@@ -45,7 +45,7 @@ export const Btn2 = ({text}: Props) => {
   return (
     <Link
       href="https://drive.google.com/file/d/1QN-bNMh5QxO_hCMuhGenpnQ9R-uVUcgb/view?usp=sharing"
-      className="relative text-bg-jib hover:no-underline hover:text-gray-0 z-[1] group  "
+      className="relative text-bg-jib hover:no-underline hover:text-gray-0 z-10 group  "
       target="blank"
     >
       {/* Animacion */}
