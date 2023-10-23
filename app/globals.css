@@ -133,19 +133,19 @@ body {
   }
 
   .circle {
-    @apply absolute rounded-full h-96 w-96;
+    @apply absolute rounded-full lg:h-96 lg:w-96 xs:h-64 xs:w-64;
   }
 
   .radial-orange {
-    @apply -left-80 -top-80 cirle-orange;
+    @apply lg:-left-80 lg:-top-80 xs:-left-52 xs:-top-52 cirle-orange;
   }
 
   .radial-purple {
-    @apply -right-80 -top-80 cirle-purple;
+    @apply lg:-right-80 lg:-top-80 xs:-right-52 xs:-top-52 cirle-purple;
   }
 
   .radial-yellow {
-    @apply left-auto top-auto -bottom-72 cirle-yellow;
+    @apply left-auto top-auto lg:-bottom-72 xs:-bottom-52 cirle-yellow;
   }
 
   .radial-orange-center {

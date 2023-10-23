@@ -31,7 +31,7 @@ const Skills = () => {
       {/* Title */}
       {/* Gradients */}
       <div className="gradients">
-        <div className="circle right-auto -top-144 cirle-purple"></div>
+        <div className="circle right-auto md:-top-128 xs:-top-188 cirle-purple"></div>
       </div>
       <h2 id="skills" className="heading2 text-gradient-grey p-4 my-20 z-10 nonselect">Skills</h2>
       <div id="cards" ref={ref}>

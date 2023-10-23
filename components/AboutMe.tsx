@@ -36,8 +36,8 @@ const AboutMe = () => {
   const cont = dataTab.find((tab: Tab) => tab.id === active);
 
   return (
-    <section className="relative md:grid md:grid-cols-2 w-full paddings mt-52 gap-8 z-10" id="about">
-      <div className="absolute w-full max-w-[1440px] h-[200px] bg-landing-linear-spectrum bg-center bg-no-repeat bg-[length:1200px] blur-[128px] opacity-30 translate-y-40 translate-x-60"></div>
+    <section className="relative lg:grid lg:grid-cols-2 w-full paddings mt-52 gap-8 z-10" id="about">
+      <div className="absolute xs:hidden 3xl:flex w-full 2xl:max-w-[1440px] h-[200px] bg-landing-linear-spectrum bg-center bg-no-repeat 2xl:bg-[length:1200px] blur-[128px] opacity-30 translate-y-40 translate-x-60"></div>
       <Image
         src="/about-me-image.png"
         alt="computer"
@@ -45,7 +45,7 @@ const AboutMe = () => {
         height={500}
         className="bg-center bg-no-repeat bg-contain z-10 2xl:translate-x-20"
       />
-      <div className="flex-start flex-col text-left h-full xs:mt-12 md:mt-4 z-10">
+      <div className="relative flex-start flex-col text-left h-full xs:mt-12 lg:mt-4 z-10">
         <h2 className="heading3 text-gradient-grey mb-2 nonselect">Sobre Mi</h2>
         <p className="text-white-500 mt-4">
           Hola! Si, como ya te habrás dado cuenta soy desarrollador Fullstack, pero... <br />

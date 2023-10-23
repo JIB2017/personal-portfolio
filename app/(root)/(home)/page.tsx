@@ -36,12 +36,12 @@ const Page = async ({ searchParams }: Props) => {
             Juan Ignacio Blacutt
           </h1>
           <TypingAnimation />
-          <div className="flex justify-between flex-row xs:justify-center flex-wrap gap-12 mt-12">
+          <div className="flex justify-between xs:flex-col xs:justify-center md:flex-row flex-wrap gap-12 mt-12">
             <Btn1 text="Ver proyectos!" destiny="#projects" target="blank"/>
             <Btn2 text="Ver curriculum" />
           </div>
         </div>
-        <div className="flex-center w-full z-20 xs:hidden lg:flex">
+        <div className="flex-center w-full z-20 xs:hidden 2xl:flex">
           <BackgroundAnimation />
         </div>
       </section>
@@ -60,7 +60,7 @@ const Page = async ({ searchParams }: Props) => {
       {/* <h2 id="skills" className="heading2 text-gradient-grey p-4 pb mt-20 mb-12 z-10 nonselect">Skills</h2> */}
       <Skills />
       {/* Blob effect mousetrack */}
-      <div id="blob" className="xs:hidden 2xl:flex">
+      <div id="blob" className="xs:hidden 3xl:flex">
         <div />
       </div>
 

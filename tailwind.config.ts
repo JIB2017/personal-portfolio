@@ -33,6 +33,8 @@ module.exports = {
       spacing: {
         '128': '32rem',
         '144': '36rem',
+        '166': '40rem',
+        '188': '44rem',
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
