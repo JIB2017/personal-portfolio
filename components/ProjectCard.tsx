@@ -14,7 +14,6 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 interface Props {
-    id: string,
     title: string,
     delay: number,
     image: string,
@@ -24,7 +23,7 @@ interface Props {
     livesite: string,
 }
 
-const ProjectCard = ({id, title, delay, image, technologies, description, repository, livesite }: Props) => {
+const ProjectCard = ({title, delay, image, technologies, description, repository, livesite }: Props) => {
     const skills = technologies.split(", ");
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });

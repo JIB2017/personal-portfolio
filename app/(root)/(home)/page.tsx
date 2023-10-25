@@ -8,7 +8,6 @@ import Skills from "@/components/Skills";
 import MouseTrack from "@/components/MouseTrack";
 import AboutMe from "@/components/AboutMe";
 import Footer from "@/components/Footer";
-import Image from "next/image";
 import CTA from "@/components/CTA";
 // import Scroll from "@/components/SmoothScrolling";
 
@@ -52,7 +51,7 @@ const Page = async ({ searchParams }: Props) => {
       <section className="relative flex-center flex-row text-white w-full flex-wrap gap-8 paddings mt-8 mb-32 z-10">
         {/* <Image src="/lluvia-pixeles-sin-fondo.webp" alt="background-pixels" className="absolute" fill={true} objectFit="cover" /> */}
           {projects && projects?.map((card: {[key: string]: string}, i: number) => (
-            <ProjectCard key={`${card._id}-${i.toString()}`} id={`${card._id}-${i.toString()}`} delay={i} title={card.title} image={card.image} technologies={card.technologies} description={card.description} repository={card.repository} livesite={card.livesite}/>
+            <ProjectCard key={`${card._id}-${i.toString()}`} delay={i} title={card.title} image={card.image} technologies={card.technologies} description={card.description} repository={card.repository} livesite={card.livesite}/>
             ))}
       </section>
 
