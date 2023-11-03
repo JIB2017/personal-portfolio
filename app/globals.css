@@ -222,6 +222,11 @@ body {
   background-color: rgb(10 10 41 / var(--tw-bg-opacity));
 }
 
+.bg-jib2 {
+  --tw-bg-opacity: 1;
+  color: rgb(10 10 41 / var(--tw-bg-opacity));
+}
+
 .text-gradient {
   background: linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100.78%);
   -webkit-background-clip: text;

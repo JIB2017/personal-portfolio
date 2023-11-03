@@ -19,7 +19,7 @@ export const Btn1 = ({text, destiny, target}: Props) => {
       </div>
       {/* Contenido */}
       <div className="bg-white-0 rounded-lg px-10 py-4">
-        <div className="gap-2 flex items-center justify-center group-hover:scale-105 duration-100 ease-in-out transition-transform">
+        <div className="bg-jib2 gap-2 flex items-center justify-center group-hover:scale-105 duration-100 ease-in-out transition-transform">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -45,7 +45,7 @@ export const Btn2 = ({text}: Props) => {
   return (
     <Link
       href="https://drive.google.com/file/d/1QN-bNMh5QxO_hCMuhGenpnQ9R-uVUcgb/view?usp=sharing"
-      className="relative text-bg-jib hover:no-underline hover:text-gray-0 z-10 group  "
+      className="relative text-bg-jib hover:no-underline hover:text-gray-0 z-10 group"
       target="blank"
     >
       {/* Animacion */}
@@ -53,7 +53,7 @@ export const Btn2 = ({text}: Props) => {
         <div className="absolute w-[125%] aspect-square h-auto left-[-12.5%] top-[-120px] bg-landing-ghost animate-spin-slow animation-slow-speed" />
       </div>
       {/* Contenido */}
-      <div className="bg-jib rounded-lg px-10 py-4 ">
+      <div className="bg-jib rounded-lg px-10 py-4">
         <div className="gap-2 flex-center group-hover:scale-105 duration-100 ease-in-out transition-transform">
           <svg
             className="text-btn2"
