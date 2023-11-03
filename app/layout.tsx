@@ -12,9 +12,9 @@ export const metadata: Metadata = {
     "color-scheme": "dark only",
     "twitter-image": "https://i.postimg.cc/DyK3Nw4G/Portfolio-front.webp",
     "twitter-card": "summary-large-image",
-    "og-url": "personal-portfolio-one-ashen.vercel.app",
-    "og-image": "https://i.postimg.cc/DyK3Nw4G/Portfolio-front.webp",
-    "og-type": "website",
+    "og:url": "personal-portfolio-one-ashen.vercel.app",
+    "og:image": "https://i.postimg.cc/DyK3Nw4G/Portfolio-front.webp",
+    "og:type": "website",
   }
 }
 
