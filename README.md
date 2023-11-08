@@ -1,4 +1,5 @@
 # Mi portfolio Fullstack
+![portfolio-gif](https://github.com/JIB2017/personal-portfolio/assets/31837873/f7f508b3-12a2-405c-91a1-b0314c17ab29)
 
 ### Bienvenido al repo de mi portfolio!!
 
