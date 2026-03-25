@@ -7,13 +7,11 @@ const TypingAnimation = () => {
     <div className="sm:paragraph-semibold md:base-bold text-gradient-grey mt-2 py-4 whitespace-nowrap nonselect">
       <TypeAnimation
         sequence={[
-          "Fullstack Developer",
+          "Web Scraper Engineer",
           1000,
-          "Frontend Developer",
+          "Backend Engineer",
           1000,
-          "Backend Developer",
-          1000,
-          "Web Developer",
+          "Cybersecurity Enthusiast",
           1000,
         ]}
         wrapper="span"
