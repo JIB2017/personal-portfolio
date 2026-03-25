@@ -13,6 +13,7 @@ const dataTab: Tab[] = [
     id: "educacion",
     content: (
       <ul className="list-none pl-2">
+        <li><span className="text-white">Diplomatura en GNU/Linux y Ciberseguridad</span> - Instituto Linux</li>
         <li><span className="text-white">Full Stack Developer Bootcamp</span> - Henry</li>
         <li><span className="text-white">Tecnicatura en Desarrollo Web</span> - UNLAM</li>
       </ul>
