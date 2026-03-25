@@ -4,6 +4,8 @@ const logos: {[key: string]: string} =
     CSS: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
     Javascript: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     Typescript: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    Python: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+    Playwright: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-original.svg",
     Tailwind: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     React: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     Redux: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
@@ -15,6 +17,7 @@ const logos: {[key: string]: string} =
     Express: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
     Sanity : "https://images.crunchbase.com/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/exghybvcvdmerns27fff",
     Auth0: "https://cdn.worldvectorlogo.com/logos/auth0.svg",
+    AWS: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
     "Framer Motion": "https://cdn.worldvectorlogo.com/logos/framer-motion.svg"
     }
 ;
