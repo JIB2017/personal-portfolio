@@ -7,7 +7,8 @@ import { useRef } from "react";
 
 const Skills = () => {
   const skills = [
-    "Typescript",
+    "Python",
+    "Javascript",
     "Tailwind",
     "Next",
     "Redux",
@@ -15,8 +16,8 @@ const Skills = () => {
     "React",
     "HTML",
     "CSS",
-    "Javascript",
-    "MySQL",
+    "Typescript",
+    "Playwright",
     "PostgreSQL",
     "Node",
     "Express",
