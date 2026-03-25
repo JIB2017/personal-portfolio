@@ -49,10 +49,10 @@ const AboutMe = () => {
       <div className="relative flex-start flex-col text-left h-full xs:mt-12 lg:mt-4 z-10">
         <h2 className="heading3 text-gradient-grey mb-2 nonselect">Sobre Mi</h2>
         <p className="text-white-500 mt-4">
-          Hola! Si, como ya te habrás dado cuenta soy desarrollador Fullstack, pero... <br />
+          Hola! Si, como ya te habrás dado cuenta soy ingeniero Fullstack, pero... <br />
           ¿Te estás preguntando si puedo ser un <span className="font-bold text-gradient_purple-blue">activo valioso</span> para tu empresa? <br />
           Un desarrollador web que además de la programación está entusiasmado por
-          las últimas novedades en <span className="font-bold text-gradient_purple-blue">blockchain, inteligencia artificial y marketing digital</span>. <br />
+          las últimas novedades en <span className="font-bold text-gradient_purple-blue">web scraping, inteligencia artificial y ciberseguridad y </span>. <br />
           Disfruté mucho el armar este portafolio pero, ¿sabes qué me gustaría mas? <br />
           Trabajar en grandes proyectos ambiciosos y con un equipo, <span className="font-bold text-gradient_purple-blue">dandolo todo</span>.
         </p>
