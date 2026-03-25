@@ -44,7 +44,7 @@ export const Btn1 = ({text, destiny, target}: Props) => {
 export const Btn2 = ({text}: Props) => {
   return (
     <Link
-      href="https://drive.google.com/file/d/1QN-bNMh5QxO_hCMuhGenpnQ9R-uVUcgb/view?usp=sharing"
+      href="https://drive.google.com/file/d/18Gsewh4RlWUe_jfLUNyjg96nTVz1drf5/view?usp=sharing"
       className="relative text-bg-jib hover:no-underline hover:text-gray-0 z-10 group"
       target="blank"
     >
