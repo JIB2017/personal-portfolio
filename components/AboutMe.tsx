@@ -52,7 +52,7 @@ const AboutMe = () => {
           Hola! Si, como ya te habrás dado cuenta soy ingeniero Fullstack, pero... <br />
           ¿Te estás preguntando si puedo ser un <span className="font-bold text-gradient_purple-blue">activo valioso</span> para tu empresa? <br />
           Un desarrollador web que además de la programación está entusiasmado por
-          las últimas novedades en <span className="font-bold text-gradient_purple-blue">web scraping, inteligencia artificial y ciberseguridad y </span>. <br />
+          las últimas novedades en <span className="font-bold text-gradient_purple-blue">web scraping, inteligencia artificial y ciberseguridad</span>. <br />
           Disfruté mucho el armar este portafolio pero, ¿sabes qué me gustaría mas? <br />
           Trabajar en grandes proyectos ambiciosos y con un equipo, <span className="font-bold text-gradient_purple-blue">dandolo todo</span>.
         </p>
